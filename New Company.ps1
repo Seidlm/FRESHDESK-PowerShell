@@ -10,16 +10,9 @@ $fresh_header = @{
 } 
 
 
-
-
-
 #Get Freshdesk Companies
 $FreshCompanies = Invoke-RestMethod -Method GET -Uri "https://*YourEndPoint*.freshdesk.com/api/v2/companies?per_page=20" -Headers $fresh_header -ContentType "application/json" 
 #$FreshCompanies = Invoke-RestMethod -Method GET -Uri "https://*YourEndPoint*.freshdesk.com/api/v2/companies?per_page=30" -Headers $fresh_header -ResponseHeadersVariable ResponseHEader
-    
-
-
-
 
 
 #New Company
